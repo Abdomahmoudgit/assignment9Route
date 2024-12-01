@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="./images/bookmark.png">
+    <!--fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- title -->
+    <title>Bookmarker</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center border-bottom border-bottom-dashed py-5 ">
+                    <h1>Bookmarker</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row border-bottom border-bottom-dashed py-3 ">
+            <div class="col-12">
+                <div class="bookmarkH3 gap-2 my-2 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-bookmark first-I"></i>
+                    <h3>Bookmark your favorite sites</h3>
+                    <i class="fa-solid fa-bookmark second-I"></i>
+                </div>
+            </div>
+            <div class="col-12">
+                <div>
+                    <div class="my-4">
+                        <label for="siteName" class="form-label">
+                            <i class="fa-solid fa-book-bookmark pe-3"></i>Site Name
+                        </label>
+                        <input placeholder="Bookmark Name" class="form-control" type="text" id="siteName">
+                        <!--error message-->
+                        <div class="invalid-feedback">
+                            Please enter a valid site name (letters, numbers, spaces, - or _ only) more than 2 letters .
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <label for="SiteURL" class="form-label"><i class="fa-solid fa-link pe-3"></i>Site
+                            URL</label>
+                        <input placeholder="Website Url" class="form-control" type="text" id="SiteURL">
+                        <!--error message-->
+                        <div class="invalid-feedback">
+                            Please enter a valid URL and ensure it follows the correct format. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="text-center w-50 mx-auto">
+                    <button onclick="addNewSite()" id="submit" class="btn btn-primary w-25 py-2">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="my-4">
+                    <table class="table text-center py-2 ">
+                        <thead>
+                            <tr>
+                                <th scope="col">Index</th>
+                                <th scope="col">Site Name</th>
+                                <th scope="col">Visit URL</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

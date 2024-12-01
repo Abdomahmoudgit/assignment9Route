@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: #fec260;
+  color: #352e28;
+  transform: skewX(-15deg);
+}
+*::selection {
+  background-color: #fec260;
+  color: #352e28;
+  transform: skewX(-15deg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  background-color: rgb(247, 236, 222);
+}
+
+body {
+  background-color: rgb(247, 236, 222);
+}
+body h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  display: inline-block;
+  position: relative;
+}
+body h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background: rgb(254, 194, 96);
+  inset: 0;
+  margin: auto;
+  transition: 0.5s;
+  top: 40%;
+  z-index: -1;
+  transform: skewX(-15deg);
+}
+body h1:hover::after {
+  height: 80%;
+}
+body .bookmarkH3 h3 {
+  font-family: "Righteous", sans-serif;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49) !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .bookmarkH3 .svg-inline--fa {
+  height: 1.7rem;
+}
+body .bookmarkH3 .svg-inline--fa.first-I {
+  color: #3ca55c;
+}
+body .bookmarkH3 .svg-inline--fa.second-I {
+  height: 1.7rem;
+  color: #b5ac49;
+}
+body label {
+  font-weight: 600;
+}
+body .border-bottom-dashed {
+  border-bottom: 1px dashed #000 !important;
+}
+body #submit {
+  background-color: rgb(187, 65, 32);
+  border-color: rgb(187, 65, 32);
+}/*# sourceMappingURL=style.css.map */
